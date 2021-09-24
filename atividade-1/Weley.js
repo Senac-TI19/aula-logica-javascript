@@ -10,5 +10,6 @@ const valor = anoAtual - ano
 
 const redes = ['facebook','instagram','linkedin','github','youtube','telegram']
 
+
 console.log(`${nome} ${sobrenome} faz ${valor} anos no ano ${anoAtual}`)
 
