@@ -9,4 +9,3 @@ Atividades de Javascript
 5. Criar uma variável que tenhar seu sobre nome
 6. Exibir no console a frase "{seu nome} {seu sobrenome} faz {idade} anos no ano de {ano atual}"
 7. Criar uma variável e armazar todas as redes sociais em que você tem conta (exemplo: "facebook", "instagram", "youtube", etc...)
-
