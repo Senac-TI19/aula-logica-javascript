@@ -45,3 +45,5 @@ function compara(idadeparametro){
 
 
 console.log(` a idade de ${nome}  ${compara(20)} que 20 anos`)
+console.log(` a idade de ${nome}  ${compara(30)} que 30 anos`)
+console.log(` a idade de ${nome}  ${compara(50)} que 50 anos`)
