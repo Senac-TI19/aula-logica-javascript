@@ -5,7 +5,7 @@ const IdadeAtual = AnoAtual - anoNascimento
 const Sobrenome = "Fernandes"
 
 console.log(`${nome} ${Sobrenome} faz ${IdadeAtual} anos no ano de ${AnoAtual}`) 
-const RedesSociais = ["linkedin","nenhuma"]
+const RedesSociais = ["instagran","nenhuma"]
 
 function VerificaSemaior(idadeParametro) {
     if (IdadeAtual > idadeParametro) {
@@ -53,15 +53,14 @@ function verificaSetemLinkedin() {
 
 console.log (`tem linkedin? ${verificaSetemLinkedin()}`)
 
-function VerificaRedeSocial() {
-    if (VerificaRedeSocial === "facebook"){
-        return true; 
+function VerificaRedeSocial(RedeSocial) {
+    if (RedeSocial === "facebook"){
+        return true
     }
-    else if (VerificaRedeSocial === "instagran"){
-        return true; 
-    }
-    
-    return false;
+    if (RedeSocial === "instagran"){
+        return true
+    } 
+    return false
 }
 
 console.log (`tem facebook? ${VerificaRedeSocial("facebook")}`)
