@@ -82,7 +82,7 @@ function verificaSeTemYoutube(){
           return true;
         }
     }
-    return false;
+    return false;    
 }
 
 // Execução das funções
