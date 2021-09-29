@@ -8,7 +8,7 @@ const anoAtual = 2021
 
 const idade = anoAtual - ano
 
-const redes = ['facebook','instagram','linkedin','github','youtube']
+
 
 
 console.log(`${nome} ${sobrenome} faz ${idade} anos no ano ${anoAtual}`)
@@ -47,3 +47,47 @@ function compara(idadeparametro){
 console.log(` a idade de ${nome}  ${compara(20)} que 20 anos`)
 console.log(` a idade de ${nome}  ${compara(30)} que 30 anos`)
 console.log(` a idade de ${nome}  ${compara(50)} que 50 anos`)
+
+//verifica se tem linkedin
+const redes = ['facebook','instagram','github','linkedin']
+
+function verificarLinkedin(){
+    if(redes.length === 0){
+        return false
+    }
+   for (let linkedin = 0; linkedin < redes.length; linkedin = linkedin + 1) {
+    if(redes[linkedin] === 'linkedin'){
+        return true
+    }
+   }
+   return false
+}
+
+console.log(`tem linkedin ${verificarLinkedin()}`)
+
+function verificaRede(){
+    if(redes.length === 0){
+        return false
+    }
+   for (let verifica = 0; verifica < redes.length; verifica = verifica + 1) {
+    if(redes[verifica] === 'linkedin')
+    {
+        return true
+    }
+    else if(redes[verifica] === 'facebook'){
+        return true
+    }
+    else if(redes[verifica] === 'instagram'){
+        return true
+    }
+    else if(redes[verifica] === 'github '){
+        return true
+    }
+   }
+   return false
+}
+console.log(`tem facebook ${verificaRede()}`)
+console.log(`tem instagram ${verificaRede()}`)
+console.log(`tem github ${verificaRede()}`)
+console.log(`tem linkdin ${verificaRede()}`)
+
