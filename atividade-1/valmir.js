@@ -5,10 +5,10 @@ const IdadeAtual = AnoAtual - anoNascimento
 const Sobrenome = "Fernandes"
 
 console.log(`${nome} ${Sobrenome} faz ${IdadeAtual} anos no ano de ${AnoAtual}`) 
-const RedesSociais = ["nenhuma", "nenhuma"]
+const RedesSociais = ["linkedin","nenhuma"]
 
 function VerificaSemaior(idadeParametro) {
-    if (IdadeAtual >= idadeParametro) {
+    if (IdadeAtual > idadeParametro) {
         return true
     } else {
         return false
@@ -16,8 +16,8 @@ function VerificaSemaior(idadeParametro) {
 }
 
 
-const ehmaiorqueDezoito = VerificaSemaior(18)
-console.log(`${nome} é maior que 18?${ehmaiorqueDezoito}`)
+const ehmaiorqueDezoito = VerificaSemaior(60)
+console.log(`${nome} é maior que 60?${ehmaiorqueDezoito}`)
 
 const ehmaiorqueCinquenta = VerificaSemaior(50)
 console.log(`${nome} é maior que 50?${ehmaiorqueCinquenta}`)
@@ -35,3 +35,34 @@ function compararIdade (idadeParametro) {
 console.log (`A idade de ${nome} é ${compararIdade(20)} que 20 anos`)
 console.log (`A idade de ${nome} é ${compararIdade(60)} que 60 anos`)
 console.log (`A idade de ${nome} é ${compararIdade(55)} que 55 anos`)
+
+function verificaSetemLinkedin() {
+    if (RedesSociais.length ===0){
+        return false
+    }
+
+    for(let posicao = 0; posicao < RedesSociais.length; posicao = posicao + 1){
+
+    if (RedesSociais[posicao] === "linkedin"){
+        return true 
+    }
+        
+    }
+    return false
+}
+
+console.log (`tem linkedin? ${verificaSetemLinkedin()}`)
+
+function VerificaRedeSocial() {
+    if (VerificaRedeSocial === "facebook"){
+        return true; 
+    }
+    else if (VerificaRedeSocial === "instagran"){
+        return true; 
+    }
+    
+    return false;
+}
+
+console.log (`tem facebook? ${VerificaRedeSocial("facebook")}`)
+console.log (`tem instagran? ${VerificaRedeSocial("instagran")}`)
