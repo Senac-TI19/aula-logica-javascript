@@ -8,8 +8,7 @@ const sobrenome = "Vinicius"
 console.log(`${primeiroNome} ${sobrenome} faz 
 ${idadeAtual} anos no ano de ${anoAtual}`)
 
-const redesSociais = ["facebook", "youtube",
-    "instagram", "linkedin"];
+const redesSociais = ["instagram"];
 
 //definição da função que verifica a idade
 function verificaSeMaiorQue(idadeParametro) {
@@ -60,4 +59,44 @@ function verificaSeTemLinkedin() {
     return false;
 }
 
+function verificaSeTemFacebook() {
+for (let posicao = 0; posicao < redesSociais.length;
+        posicao = posicao + 1) {
+
+        if (redesSociais[posicao] === "facebook") {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function verificaSeTemInstagram() {
+
+    for (let posicao = 0; posicao < redesSociais.length;
+        posicao = posicao + 1) {
+
+        if (redesSociais[posicao] === "instagram") {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function verificaSeTemYoutube() {
+ for (let posicao = 0; posicao < redesSociais.length;
+        posicao = posicao + 1) {
+
+        if (redesSociais[posicao] === "youtube") {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 console.log(`Tem linkedin? ${verificaSeTemLinkedin()}`);
+console.log(`Tem facebook? ${verificaSeTemFacebook()}`)
+console.log(`Tem instagram? ${verificaSeTemInstagram()}`)
+console.log(`Tem youtube? ${verificaSeTemYoutube()}`)
