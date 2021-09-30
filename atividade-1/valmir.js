@@ -57,9 +57,7 @@ function VerificaRedeSocial(RedeSocial){
     if (RedesSociais === RedeSocial ){
         return true
     }
-    //if (RedeSocial === RedesSociais){
-       // return true
-     
+         
     return false
 }
 
