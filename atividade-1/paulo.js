@@ -6,8 +6,6 @@ const sobrenome = "Lopes"
 
 console.log(`${nome} ${sobrenome} faz ${idadeAtual} anos no ano de ${anoAtual}`)
 
-const redesSociais = ["instagram", "youtube", "whatsapp", "twitter"]
-
 // definição da função que verifica idade
 function verificaSeMaiorQue(idadeParametro) {
     if (idadeAtual >= idadeParametro) {
@@ -39,3 +37,62 @@ function comparaIdade(idadeParametro) {
 console.log(`A idade de ${nome} é ${comparaIdade(20)} que 20 anos`)
 console.log(`A idade de ${nome} é ${comparaIdade(30)} que 30 anos`)
 console.log(`A idade de ${nome} é ${comparaIdade(45)} que 45 anos`)
+
+const redesSociais = ["instagram", "youtube", "whatsapp", "twitter",]
+// Declaração de função que verifica Linkedin
+function verificaSeTemLinkedin() {
+    if (redesSociais.length === 0) {
+        return false
+    }
+    for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
+        if (redesSociais[posicao] === "Linkedin") {
+            return true
+        }
+    }
+    return false
+}
+// Execução da função que verifica se tem Linkedin
+console.log(`Tem Linkedin? ${verificaSeTemLinkedin()}`)
+
+// Declaração de função que verifica se tem Facebook
+function verificaSeTemFacebook() {
+    if (redesSociais.length === 0) {
+        return false
+    }
+    for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
+        if (redesSociais[posicao] === "Facebook") {
+            return true
+        }
+    }
+    return false
+}
+
+// Declaração de função que verifica Instagram
+function verificaSeTemInstagram() {
+    if (redesSociais.length === 0) {
+        return false
+    }
+    for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
+        if (redesSociais[posicao] === "Instagram") {
+            return true
+        }
+    }
+    return false
+}
+
+// Declaração de função que verifica Youtube
+function verificaSeTemYoutube() {
+    if (redesSociais.length === 0) {
+        return false
+    }
+    for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
+        if (redesSociais[posicao] === "Youtube") {
+            return true
+        }
+    }
+    return false
+}
+
+console.log(`Tem Facebook? ${verificaSeTemFacebook()}`)
+console.log(`Tem Instagram? ${verificaSeTemInstagram()}`)
+console.log(`Tem Youtube? ${verificaSeTemYoutube()}`)
