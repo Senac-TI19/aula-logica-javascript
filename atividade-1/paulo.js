@@ -66,8 +66,6 @@ function verificaSeTemFacebook() {
     }
     return false
 }
-// Execução da função que verifica se tem Facebook
-console.log(`Tem Facebook? ${verificaSeTemFacebook()}`)
 
 // Declaração de função que verifica Instagram
 function verificaSeTemInstagram() {
@@ -81,8 +79,6 @@ function verificaSeTemInstagram() {
     }
     return false
 }
-// Execução da função que verifica se tem Instagram
-console.log(`Tem Instagram? ${verificaSeTemInstagram()}`)
 
 // Declaração de função que verifica Youtube
 function verificaSeTemYoutube() {
@@ -96,5 +92,7 @@ function verificaSeTemYoutube() {
     }
     return false
 }
-// Execução da função que verifica se tem Youtube
+
+console.log(`Tem Facebook? ${verificaSeTemFacebook()}`)
+console.log(`Tem Instagram? ${verificaSeTemInstagram()}`)
 console.log(`Tem Youtube? ${verificaSeTemYoutube()}`)
