@@ -8,7 +8,6 @@ const sobrenome = "Vinicius"
 console.log(`${primeiroNome} ${sobrenome} faz 
 ${idadeAtual} anos no ano de ${anoAtual}`)
 
-const redesSociais = ["instagram"];
 
 //definição da função que verifica a idade
 function verificaSeMaiorQue(idadeParametro) {
@@ -42,6 +41,9 @@ console.log(`A idade de ${primeiroNome} é ${comparaIdade(20)} que 20 anos`)
 console.log(`A idade de ${primeiroNome} é ${comparaIdade(25)} que 25 anos`)
 console.log(`A idade de ${primeiroNome} é ${comparaIdade(30)} que 30 anos`)
 
+
+const redesSociais = ["linkedin","facebook","youtube"];
+
 //Declaração da função que verifica linkedin
 function verificaSeTemLinkedin() {
     if (redesSociais.length === 0) {
@@ -59,44 +61,22 @@ function verificaSeTemLinkedin() {
     return false;
 }
 
-function verificaSeTemFacebook() {
-for (let posicao = 0; posicao < redesSociais.length;
-        posicao = posicao + 1) {
-
-        if (redesSociais[posicao] === "facebook") {
-            return true;
+function verificaSeTemRedesSociais(redesSociaisParametro) {
+   for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) { 
+       
+    if (redesSociais[posicao] === redesSociaisParametro) {
+       
+            
+                return true;
+            }
         }
-    }
+    
 
     return false;
 }
 
-function verificaSeTemInstagram() {
 
-    for (let posicao = 0; posicao < redesSociais.length;
-        posicao = posicao + 1) {
-
-        if (redesSociais[posicao] === "instagram") {
-            return true;
-        }
-    }
-
-    return false;
-}
-
-function verificaSeTemYoutube() {
- for (let posicao = 0; posicao < redesSociais.length;
-        posicao = posicao + 1) {
-
-        if (redesSociais[posicao] === "youtube") {
-            return true;
-        }
-    }
-
-    return false;
-}
-
-console.log(`Tem linkedin? ${verificaSeTemLinkedin()}`);
-console.log(`Tem facebook? ${verificaSeTemFacebook()}`)
-console.log(`Tem instagram? ${verificaSeTemInstagram()}`)
-console.log(`Tem youtube? ${verificaSeTemYoutube()}`)
+console.log(`Tem linkedin? ${verificaSeTemRedesSociais("linkedin")}`);
+console.log(`Tem facebook? ${verificaSeTemRedesSociais("facebook")}`);
+console.log(`Tem instagram? ${verificaSeTemRedesSociais("instagram")}`);
+console.log(`Tem youtube? ${verificaSeTemRedesSociais("youtube")}`);
