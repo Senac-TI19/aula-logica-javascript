@@ -5,7 +5,6 @@ const idadeAtual =  AnoAtual - anoNascimento
 const sobrenome = "Silva"
 
 console.log (`${nome} ${sobrenome} faz ${idadeAtual} anos no ano de ${AnoAtual}`)
-const redeSocial = ["facebook, instagram, Youtube"]
 
 //Definição da função que verifica idade
 function verificaSeMaiorQue(idadeParametro) {
@@ -41,5 +40,36 @@ console.log(`A idade de ${nome} é ${comparaIdade} que 17 anos`)
 console.log(`A idade de ${nome} é ${comparaIdade} que 20 anos`)
 console.log(`A idade de ${nome} é ${comparaIdade} que 23 anos`)
 
+//verifica se tem linkedin
+const redes = ['facebook','instagram','linkedin']
 
+function verificarLinkedin(){
+    if(redes.length === 0){
+        return false
+    }
+   for (let linkedin = 0; linkedin < redes.length; linkedin = linkedin + 1) {
+    if(redes[linkedin] === 'linkedin'){
+        return true
+    }
+   }
+   return false
+}
+
+console.log(`tem linkedin ${verificarLinkedin()}`)
+
+function verificar(temRede){
+    const redesSociais = ['facebook','instagram','linkedin']
+    if(redesSociais.length === 0){
+        return false
+    }
+   for (let verifica = 0; verifica < redesSociais.length; verifica = verifica++ ) {
+    if(redesSociais[verifica] === temRede){
+        return true
+    }
+   }
+   return false
+}
+console.log(`tem linkedin? ${verificar('linkedin')}`)
+console.log(`tem instagram? ${verificar('instagram')}`)
+console.log(`tem facebook? ${verificar('linkedin')}`)
 }
