@@ -59,8 +59,11 @@ function verificaSeTemLinkedin() {
 console.log(`Tem linkedin? ${verificaSeTemLinkedin()}`);
 
 // Função do item 11
+function verificaSeTemRedeSocial(redeSocialParametro) {
+
+}
 
 // Execução da função
-console.log(`Tem facebook? ${nomeDaFuncao("facebook")}`)
-console.log(`Tem instagram? ${nomeDaFuncao("instagram")}`)
-console.log(`Tem youtube? ${nomeDaFuncao("youtube")}`)
+console.log(`Tem facebook? ${verificaSeTemRedeSocial("facebook")}`)
+console.log(`Tem instagram? ${verificaSeTemRedeSocial("instagram")}`)
+console.log(`Tem youtube? ${verificaSeTemRedeSocial("youtube")}`)
