@@ -18,13 +18,13 @@ function verificaSeMaiorQue(idadeParametro){
 }
 
 //Executa a função que verifica a idade
-
+/*
 const ehMaiorQueDezoito = verificaSeMaiorQue(18)
 console.log(`${nome} é maior que 18? ${ehMaiorQueDezoito}`)
 
 const ehMaiorQueCinquenta = verificaSeMaiorQue(50)
 console.log(`${nome} é maior que 50? ${ehMaiorQueCinquenta}`)
-
+*/
 //definição da função que compara idade
 function comparaIdade(idadeParametro){
     if(idadeAtual > idadeParametro){
@@ -40,45 +40,32 @@ function comparaIdade(idadeParametro){
 }
 
 // Executa a dunção que compara a idade
-
+/*
 console.log(`A idade de ${nome} é ${comparaIdade(20)} que 20 anos`)
 console.log(`A idade de ${nome} é ${comparaIdade(33)} que 33 anos`)
 console.log(`A idade de ${nome} é ${comparaIdade(45)} que 45 anos`)
-
+*/
 const redesSociais = ["facebook","linkedin", "youtube", "instagram"];
+
 // Declaração da função que verifica se tem linkedin
-function verificaSeTemLinkedin() {
-  if (redesSociais.length === 0) {
-    return false;
+function verificarSeTemLinkedin(){
+  if(redes.length === 0){
+      return false
   }
-  for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
-    if (redesSociais[posicao] === "linkedin") {
+  for(let posicao = 0; posicao < redesSociais.length; posicao++) {
+    if (redesSociais[posicao] === "linksedin") {
       return true;
-    }
+    }    
   }
-  return false;
+  return false; 
+  
 }
+//console.log(`tem linkedin ${verificarSeTemLinkedin()}`)
 
-
-function verificaSeTemFacebook(){   
-    for(let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
-        if (redesSociais[posicao] === "facebook") {
-          return true;
-        }
-    }
-    return false;
-}
-function verificaSeTemInstagram(){   
-    for(let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
-        if (redesSociais[posicao] === "instagram") {
-          return true;
-        }
-    }
-    return false;
-}
-function verificaSeTemYoutube(){   
-    for(let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
-        if (redesSociais[posicao] === "youtube") {
+//verifica Redes Sociais
+function verificaSeTemRedeSocial(rede){   
+    for(let posicao = 0; posicao < redesSociais.length; posicao++) {
+        if (redesSociais[posicao] === rede) {
           return true;
         }
     }
@@ -86,8 +73,11 @@ function verificaSeTemYoutube(){
 }
 
 // Execução das funções
-console.log(`Tem linkedin? ${verificaSeTemLinkedin()}`);
-console.log(`Tem facebook? ${verificaSeTemFacebook()}`)
-console.log(`Tem instagram? ${verificaSeTemInstagram()}`)
-console.log(`Tem youtube? ${verificaSeTemYoutube()}`)
+console.log(`Tem facebook? ${verificaSeTemRedeSocial("facebook")}`);
+console.log(`Tem instagram? ${verificaSeTemRedeSocial("instagram")}`);
+console.log(`Tem youtube? ${verificaSeTemRedeSocial("youtube")}`);
+console.log(`Tem linkedin? ${verificaSeTemRedeSocial("linkedin")}`);
+console.log(`Tem github? ${verificaSeTemRedeSocial("git")}`);
+
+
 

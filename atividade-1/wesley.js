@@ -65,57 +65,19 @@ function verificarLinkedin(){
 
 console.log(`tem linkedin ${verificarLinkedin()}`)
 
-function verificaRede(){
-    if(redes.length === 0){
+function verificar(temRede){
+    const redesSociais = ['facebook','instagram','github','linkedin']
+    if(redesSociais.length === 0){
         return false
     }
-   for (let verifica = 0; verifica < redes.length; verifica = verifica + 1) {
-    if(redes[verifica] === 'linkedin')
-    {
+   for (let verifica = 0; verifica < redesSociais.length; verifica = verifica++ ) {
+    if(redesSociais[verifica] === temRede){
         return true
     }
    }
    return false
 }
-function verificaRede2(){
-    if(redes.length === 0){
-        return false
-    }
-   for (let verifica = 0; verifica < redes.length; verifica = verifica + 1) {
-    if(redes[verifica] === 'facebook')
-    {
-        return true
-    }
-   }
-   return false
-}
-function verificaRede3(){
-    if(redes.length === 0){
-        return false
-    }
-   for (let verifica = 0; verifica < redes.length; verifica = verifica + 1) {
-    if(redes[verifica] === 'instagram')
-    {
-        return true
-    }
-   }
-   return false
-}
-function verificaRede4(){
-    if(redes.length === 0){
-        return false
-    }
-   for (let verifica = 0; verifica < redes.length; verifica = verifica + 1) {
-    if(redes[verifica] === 'github')
-    {
-        return true
-    }
-   }
-   return false
-}
-
-console.log(`tem facebook ${verificaRede2()}`)
-console.log(`tem instagram ${verificaRede3()}`)
-console.log(`tem github ${verificaRede4()}`)
-console.log(`tem linkdin ${verificaRede()}`)
-
+console.log(`tem linkedin ${verificar('linkedin')}`)
+console.log(`tem github ${verificar('github')}`)
+console.log(`tem instagram ${verificar('instagram')}`)
+console.log(`tem facebook ${verificar('linkedin')}`)
