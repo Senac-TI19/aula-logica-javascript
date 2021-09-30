@@ -66,12 +66,12 @@ function verificarLinkedin(){
 console.log(`tem linkedin ${verificarLinkedin()}`)
 
 function verificar(temRede){
-    const redes = ['facebook','instagram','github','linkedin']
-    if(redes.length === 0){
+    const redesSociais = ['facebook','instagram','github','linkedin']
+    if(redesSociais.length === 0){
         return false
     }
-   for (let verifica = 0; verifica < redes.length; verifica = verifica + 1) {
-    if(redes[verifica] === temRede){
+   for (let verifica = 0; verifica < redesSociais.length; verifica = verifica++ ) {
+    if(redesSociais[verifica] === temRede){
         return true
     }
    }
