@@ -53,7 +53,7 @@ function verificaSetemLinkedin() {
 
 console.log (`tem linkedin? ${verificaSetemLinkedin()}`)
 
-function VerificaRedeSocial(RedeSocial) {
+function VerificaRedeSocial(RedeSocial){
     if (RedesSociais === RedeSocial ){
         return true
     }
