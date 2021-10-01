@@ -42,10 +42,11 @@ console.log(`A idade de ${primeiroNome} é ${comparaIdade(25)} que 25 anos`)
 console.log(`A idade de ${primeiroNome} é ${comparaIdade(30)} que 30 anos`)
 
 
-const redesSociais = ["linkedin","facebook","youtube"];
+const redesSociais = [];
 
 //Declaração da função que verifica linkedin
 function verificaSeTemLinkedin() {
+ 
     if (redesSociais.length === 0) {
         return false;
     }
@@ -60,22 +61,23 @@ function verificaSeTemLinkedin() {
 
     return false;
 }
-
 function verificaSeTemRedesSociais(redesSociaisParametro) {
-   for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) { 
-       
-    if (redesSociais[posicao] === redesSociaisParametro) {
-       
-            
-                return true;
-            }
-        }
+    if (redesSociais.length === 0) {
+        return false;
+    }
     
+    for (let posicao = 0; posicao < redesSociais.length; posicao = posicao + 1) {
 
+        if (redesSociais[posicao] === redesSociaisParametro) {
+
+            return true;
+        }
+    }
+    
     return false;
 }
 
-
+verificaSeTemLinkedin()
 console.log(`Tem linkedin? ${verificaSeTemRedesSociais("linkedin")}`);
 console.log(`Tem facebook? ${verificaSeTemRedesSociais("facebook")}`);
 console.log(`Tem instagram? ${verificaSeTemRedesSociais("instagram")}`);
