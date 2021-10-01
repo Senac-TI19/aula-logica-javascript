@@ -57,13 +57,13 @@ function verificarLinkedin(){
 
 console.log(`tem linkedin ${verificarLinkedin()}`)
 
-function verificar(temRede){
+function verificar(Rede){
     const redesSociais = ['facebook','instagram','linkedin']
     if(redesSociais.length === 0){
         return false
     }
    for (let verifica = 0; verifica < redesSociais.length; verifica = verifica++ ) {
-    if(redesSociais[verifica] === temRede){
+    if(redesSociais[verifica] === Rede){
         return true
     }
    }
