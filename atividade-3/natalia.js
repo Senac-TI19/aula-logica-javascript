@@ -1,8 +1,20 @@
-let execucoes = 0
+let totaldeExecucoes = 0
 
-while (execucoes < 5) {
+function repeteExecucoes(quantidade) {
+   let execucoes = 0 
+while (execucoes < quantidade) {
     execucoes = execucoes + 1
-    console.log("quantidade de execuções = ", execucoes)    
+    console.log("Execução =",execucoes)    
+  }
+   
+totaldeExecucoes = totaldeExecucoes + execucoes
 }
 
-console.log("final do código")
+repeteExecucoes(3)
+console.log("---------------")
+repeteExecucoes(5)
+console.log("---------------")
+repeteExecucoes(8)
+console.log("---------------")
+
+console.log("Final do codigo =", totaldeExecucoes)
