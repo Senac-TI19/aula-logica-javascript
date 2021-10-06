@@ -7,14 +7,13 @@ function repeteExecucoes(quantidade) {
         console.log("Execução =", execucoes)              
     }
     totalDeExecucoes = totalDeExecucoes + execucoes
+    console.log("-------------")
 }
 
 repeteExecucoes(5)
-console.log("-------------")
 repeteExecucoes(10)
-console.log("-------------")
 repeteExecucoes(15)
-console.log("-------------")
+
 
 
 console.log("Total de execuções", totalDeExecucoes)
