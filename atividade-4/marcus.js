@@ -12,7 +12,7 @@ function repeteExecucoes(quantidade) {
     for (execucoes = 0; execucoes < quantidade;
         execucoes = execucoes + 1) { console.log("Execução =", execucoes) }
 
-    totalDeExecucoes += execucoes
+    totalDeExecucoes = totalDeExecucoes + execucoes
     console.log("---------------")
 }
 
