@@ -7,14 +7,13 @@ let totalDeExecucoes = 0
 
 function repeteExecucoes(quantidade) {
 
-    for (let execucoes = 0; execucoes < quantidade; execucoes = execucoes + 1) {
+    let execucoes
 
-        console.log("Execução =", execucoes)
-    }
+    for (execucoes = 0; execucoes < quantidade;
+        execucoes = execucoes + 1) { console.log("Execução =", execucoes) }
 
-    totalDeExecucoes = totalDeExecucoes + execucoes
+    totalDeExecucoes += execucoes
     console.log("---------------")
-
 }
 
 repeteExecucoes(3)
