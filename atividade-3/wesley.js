@@ -23,15 +23,13 @@ function repeteexecucoes(executa){
     while(execucoes < executa){
         execucoes = execucoes + 1
         console.log("quantidade de execuções =", execucoes) 
-        
     }
-    totalExecucoes = totalExecucoes + execucoes
+    totalExecucoes += execucoes
+    console.log('---------------------')
 }
 
 repeteexecucoes(3)
-console.log('---------------------')
 repeteexecucoes(10)
-console.log('---------------------')
 repeteexecucoes(5)
 
 
