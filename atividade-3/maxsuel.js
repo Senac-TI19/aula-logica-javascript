@@ -21,7 +21,7 @@ function repeteexecucoes(quantidade){
         console.log("quantidade de execuções =", execucoes) 
         
     }
-    totalExecucoes = totalDeExecucoes + execucoes
+    totalDeExecucoes = totalDeExecucoes + execucoes
     console.log('---------------------')
 }
 
@@ -30,4 +30,4 @@ repeteexecucoes(10)
 repeteexecucoes(15)
 
 
-console.log('total de execuções',totalExecucoes)
+console.log('total de execuções',totalDeExecucoes)
