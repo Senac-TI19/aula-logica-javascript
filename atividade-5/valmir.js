@@ -49,4 +49,4 @@ function ImprimeNoticiais(){
 
 }
 ImprimeNoticiais()
-console.log(noticia1.titulo, noticia2.titulo, noticia3.titulo)
+console.log(noticia1.titulo, ",", noticia2.titulo,",", noticia3.titulo)
