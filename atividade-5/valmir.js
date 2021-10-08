@@ -82,3 +82,18 @@ function ImprimiDataNoticiasFor(noticias){
 
 const TodasANoticias = [noticia1,noticia2,noticia3];
 ImprimiDataNoticiasFor(TodasANoticias);
+
+console.log("-------------------")
+
+
+
+function ImprimeData(noticias) {
+   let posicao = 0
+while (posicao < 3) {
+    console.log(`${noticias[posicao].id} Noticia publicada em: ${noticias[posicao].data}`) 
+   posicao = posicao + 1
+   
+}
+}
+const TodasAbNoticias = [noticia1,noticia2,noticia3];
+ImprimeData(TodasAbNoticias);
