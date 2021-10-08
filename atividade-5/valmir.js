@@ -89,6 +89,7 @@ console.log("-------------------")
 
 function ImprimeData(noticias) {
    let posicao = 0
+   //noticias.length
 while (posicao < 3) {
     console.log(`${noticias[posicao].id} Noticia publicada em: ${noticias[posicao].data}`) 
    posicao = posicao + 1
