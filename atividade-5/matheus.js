@@ -30,4 +30,27 @@ function imprimeTitulosDasNoticias(){
     console.log(noticia3.titulo)
 }
 
-imprimeTitulosDasNoticias()
+
+function imprimeTituloEAutor(noticia){
+    console.log(`Noticia ${noticia.titulo} do autor ${noticia.autor}`)
+}
+
+//imprimeTituloEAutor(noticia1)
+
+function imprimeDataDasNoticias(noticias){
+    console.log(`${noticias[0].id} - publicada em ${noticias[0].data}`)
+    console.log(`${noticias[1].id} - publicada em ${noticias[1].data}`)
+    console.log(`${noticias[2].id} - publicada em ${noticias[2].data}`)
+}
+
+function imprimeDataDasNoticiasFor(noticia){
+    for(let cont=0; cont < noticia.length; cont++){
+        console.log(`${noticia[cont].id} - publicada em ${noticia[cont].data}`)
+    }
+}
+
+const todasAsNoticias = [noticia1, noticia2, noticia3]
+
+//imprimeDataDasNoticias(todasAsNoticias)
+
+imprimeDataDasNoticiasFor(todasAsNoticias)
