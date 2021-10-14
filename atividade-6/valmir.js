@@ -23,3 +23,24 @@ function ImprimeAutores(noticias) {
  }
 
  console.log("-------------------")
+
+ function ImprimeAutoresUnicos() {
+   const ListaAutoresImprimidos = []
+   for (let publicacao1 = 0; publicacao1 < noticias.length; publicacao1 = publicacao1 + 1) {
+      const noticia = noticias[publicacao1]
+      if (noticia.author !== null){
+   
+         if (!ListaAutoresImprimidos.includes(noticia.author)){
+            console.log(noticia.author)
+            ListaAutoresImprimidos.push(noticia.author)
+         } 
+            
+         }
+        
+      }
+      
+       }
+ 
+ ImprimeAutoresUnicos();
+
+ console.log("-------------------")
