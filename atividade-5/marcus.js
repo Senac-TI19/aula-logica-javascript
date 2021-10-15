@@ -35,4 +35,32 @@ function imprimeTitulosDasNoticias(){
     console.log(noticia3.titulo)
 }
 
-imprimeTitulosDasNoticias()
+function imprimeTituloeAutor(noticia){
+  
+   console.log(`"${noticia.titulo}" do autor "${noticia.autor}"`)
+}
+
+imprimeTituloeAutor(noticia1);
+imprimeTituloeAutor(noticia2);
+imprimeTituloeAutor(noticia3);
+
+function imprimeDataDasNoticias(noticias){
+    console.log(`${noticias[0].id} - publicada em ${noticias[0].data}`);
+    console.log(`${noticias[1].id} - publicada em ${noticias[1].data}`);
+    console.log(`${noticias[2].id} - publicada em ${noticias[2].data}`);
+}
+
+function imprimeDataDasNoticiasFor(noticias){
+
+    //length = posição da array, ou seja, quantas variáveis tem na array
+    //se posicao(no caso 0) for menor que a array(noticias.length, que no caso vai ser 3) ele vai executar até dar false)
+
+    for(posicao = 0; posicao < noticias.length; posicao = posicao + 1) {
+        console.log(`id ${noticias[posicao].id} publicada em ${noticias[posicao].data}`)
+    }
+}
+
+const todasAsNoticias = [noticia1, noticia2, noticia3];
+
+imprimeDataDasNoticias(todasAsNoticias);
+imprimeDataDasNoticiasFor(todasAsNoticias);
