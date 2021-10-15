@@ -44,3 +44,27 @@ function ImprimeAutores(noticias) {
  ImprimeAutoresUnicos();
 
  console.log("-------------------")
+
+
+ 
+//imprimetodosautoresunicos(noticias)
+
+function imprimetituloseautores(autor) {
+
+    for (let percorre = 0; percorre < autor.length; percorre++) {
+        const noticia = autor[percorre]
+
+        if(noticia.author !== null){
+        console.log(`${noticia.title} autor da noticia:   ${noticia.author}`)
+        console.log('----------------')
+        }else{
+            console.log(`${noticia.title} foi publicado no:  ${noticia.source.name}`)
+            
+        }
+    }
+
+}
+
+imprimetituloseautores(noticias)
+
+console.log('----------------')
