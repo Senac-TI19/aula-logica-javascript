@@ -41,7 +41,7 @@ function imprimetituloseautores(autor) {
         if(noticia.author !== null){
         console.log(`${noticia.title} autor da noticia:   ${noticia.author}`)
         console.log('----------------')
-        }else if(noticia.author === null){
+        }else{
             console.log(`${noticia.title} autor da noticia:  ${noticia.source.name}`)
             console.log('-------------------')
         }
