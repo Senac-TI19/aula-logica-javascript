@@ -1,5 +1,4 @@
 
-
 function executoraDeFuncoes(funcao, quantidadeExecucoes) {
     console.log(`vai executar ${quantidadeExecucoes} vezes`);
     for (let execucoes = 0; execucoes < quantidadeExecucoes ; execucoes = execucoes + 1) {
