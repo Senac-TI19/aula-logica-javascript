@@ -4,14 +4,14 @@
 function executoraDeFuncoes(funcao, quantidadeExecucoes){
     
     //se colocar mais um ou mais funcao() ele vai repetir duas ou mais vezes
+
+    console.log(`vai executar ${quantidadeExecucoes} vezes`)
     
     for(let execucoes = 0; execucoes < quantidadeExecucoes; execucoes = execucoes + 1) {
 
         funcao();
         
     }
-
-    console.log(`vai executar ${quantidadeExecucoes} vezes`)
     
 }
 
