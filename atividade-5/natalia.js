@@ -79,15 +79,12 @@ console.log(noticias[posicao].id,"publicada em:",noticias[posicao].data)
 posicao = posicao + 1
 
 }
+}
 const todasAsNoticias = [noticia1, noticia2, noticia3];
 
 
 imprimeDataDasNoticias(todasAsNoticias);
 imprimeDataDasNoticiasFor(todasAsNoticias);
-
-
-
-
 
 
 
