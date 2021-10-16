@@ -10,6 +10,8 @@ function executoraDeFuncoes(funcao, quantidadeExecucoes){
         funcao();
         
     }
+
+    console.log(`vai executar ${quantidadeExecucoes} vezes`)
     
 }
 
