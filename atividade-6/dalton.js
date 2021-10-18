@@ -28,8 +28,8 @@ function imprimirTodosOsAutoresUnicos() {
 // se author === null => {title} foi publicada no {source.name}
 // "Coreia do Sul se prepara para alta de casos de covid-19 durante feriado" foi publicada no "Globo"
 function imprimirDetalhesDaNoticia() {
-  for (let indice = 0; indice < noticias.length; indice++) {
-    const noticia = noticias[indice];
+  for (let ind = 0; ind < noticias.length; ind++) {
+    const noticia = noticias[ind];
 
     if (noticia.author !== null) {
       console.log(`${noticia.title} foi publicada por ${noticia.author}`);
