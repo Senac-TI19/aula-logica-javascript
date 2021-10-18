@@ -42,3 +42,4 @@ function imprimirDetalhesDaNoticia() {
 imprimirTodosOsAutores();
 imprimirTodosOsAutoresUnicos();
 imprimirDetalhesDaNoticia();
+
