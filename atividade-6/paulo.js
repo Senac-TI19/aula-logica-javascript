@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 const noticias = require('./noticias.json')
 
 function imprimirTodosOsAutores() {
@@ -37,3 +38,28 @@ function imprimirTituloEAutor(){
 // imprimirTodosOsAutores ()
 // imprimirTodosOsAutoresUnicos ()
 imprimirTituloEAutor ()
+=======
+const noticias = require('./noticias.json')
+
+function imprimirTodosOsAutores() {
+   for (let posicao = 0; posicao < noticias.length; posicao += 1) {
+        const noticia = noticias[posicao];
+        console.log(noticia.author);
+    }
+}
+
+function imprimirTodosOsAutoresUnicos() {
+    for (let posicao = 0; posicao < noticias.length; posicao += 1) {
+        const noticia = noticias[posicao];
+        if (noticia.author !== null) {
+          const ListAutoresJaImprimidos = []            
+          if (noticia.author não foi exibido) {
+              console.log(noticia.author);
+              ListAutoresJaImprimidos.push(noticias.author)
+          }  
+       }        
+    }
+}
+
+imprimirTodosOsAutores()
+>>>>>>> Stashed changes
